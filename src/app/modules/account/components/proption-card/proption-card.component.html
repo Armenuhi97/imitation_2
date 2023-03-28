@@ -1,0 +1,15 @@
+<div class="card">
+    <div class="card-header">
+        <div class="title"> {{promotion?.title}}</div>
+    </div>
+    <div class="card-content">
+        <p class="d-flex mb-0  align-items-center justify-content-between">
+            <span class="title"> {{'account.duration' | translate}}</span>
+            <span class="value">{{promotion?.duration}} {{'account.day' | translate}}</span>
+        </p>
+        <p class="mt-2 mb-0 d-flex align-items-center justify-content-between">
+            <span class="title">{{'account.commission' | translate}}</span>
+            <span class="value">{{promotion?.percent}} %</span>
+        </p>
+    </div>
+</div>

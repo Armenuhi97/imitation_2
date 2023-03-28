@@ -1,0 +1,30 @@
+.card {
+    background: var(--header-color);
+    box-shadow: inset 1px 2px 4px rgba(255, 255, 255, 0.25);
+    border-radius: 4px;
+    padding: 8px 10px;
+    text-align: center;
+    .price {
+        margin-top: 5px;
+        font-family: "Poppins";
+        font-style: normal;
+        font-weight: 500;
+        font-size: 10px;
+        line-height: 10px;
+        color: var(--light-text-color);
+        margin-bottom: 0;
+    }
+    .title {
+        margin-bottom: 0;
+        font-family: "Sora";
+        font-style: normal;
+        font-weight: 800;
+        font-size: 12px;
+        line-height: 15px;
+        background: var(--main-gradient-color);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        text-fill-color: transparent;
+    }
+}

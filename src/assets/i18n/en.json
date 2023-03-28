@@ -78,5 +78,18 @@
         "order_completion": "Order completion",
         "yesterday_commission": "Yesterday's commission",
         "team_commission": "Team commission"
+    },
+    "account": {
+        "balance": "Balance",
+        "profit": "Profit",
+        "benefit": "Benefit",
+        "last_result": "Last  Result",
+        "transfer_amount": "Transfer amount",
+        "estimated_income": "Estimated income",
+        "transfer": "Transfer",
+        "transfer_list": "Transfer list",
+        "duration": "Duration",
+        "commission": "Commission",
+        "day": "Day"
     }
 }

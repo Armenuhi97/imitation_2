@@ -9,8 +9,6 @@ import { ShineButtonComponent } from './components/shine-button/shine-button.com
 import { CarouselModule } from 'ngx-owl-carousel-o';
 import { HomeService } from './services/home.service';
 
-
-
 @NgModule({
   declarations: [
     HomeComponent,

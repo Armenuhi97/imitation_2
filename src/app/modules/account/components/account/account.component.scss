@@ -1,0 +1,43 @@
+@import url("/src/assets/styles/buttons.scss");
+
+app-calculate-card {
+    width: calc(25% - 5px);
+}
+
+app-proption-card {
+    width: calc(50% - 5px);
+    margin-top: 16px;
+}
+.amount {
+    margin-top: 16px;
+    background: #efe7cb;
+    border: 1px solid #000000;
+    border-radius: 4px;
+    padding: 10px;
+    width: 100%;
+    font-family: "Sora";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 18px;
+    span {
+        width: calc((85% - 10px) / 2);
+    }
+}
+.estimated {
+    color: var(--header-color);
+}
+.transfer-amount {
+    color: #5a5d74;
+}
+.border-line {
+    height: 21px;
+    width: 15% !important;
+    border-left: 1px solid #000000;
+    margin-left: 10px;
+}
+.btn {
+    font-size: 15px;
+    line-height: 19px;
+    padding: 12px 5px;
+}
