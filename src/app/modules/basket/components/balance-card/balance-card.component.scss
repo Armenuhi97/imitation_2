@@ -1,0 +1,24 @@
+.balance-card {
+    background:  var(--header-color);
+    box-shadow: inset 1px 2px 4px rgba(255, 255, 255, 0.25);
+    border-radius: 4px;
+    padding: 16px 10px;
+    .title {
+        background: var(--main-gradient-color);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font-family: "Sora";
+        font-style: normal;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 18px;
+    }
+    .price {
+        font-family: "Poppins";
+        font-style: normal;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 24px;
+        color: var(--light-text-color);
+    }
+}

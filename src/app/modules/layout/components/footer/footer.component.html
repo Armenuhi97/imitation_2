@@ -1,0 +1,13 @@
+<footer class="footer">
+    <div class="d-flex align-items-center justify-content-between">
+        <a class="mx-2" *ngFor="let menu of menuList" [routerLink]="menu.path" routerLinkActive="selected-menu">
+            <div *ngIf="menu.title">
+                <div class="text-center"> <i class="bi {{menu.icon}}"></i></div>
+                <span class="title mt-2">{{menu.title | translate}}</span>
+            </div>
+            <div class="basket-icon d-flex align-items-center justify-content-center" *ngIf="!menu.title">
+                <img [src]="menu.icon" alt="">
+            </div>
+        </a>
+    </div>
+</footer>

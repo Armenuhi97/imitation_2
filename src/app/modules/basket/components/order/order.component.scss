@@ -1,0 +1,10 @@
+.image {
+    height: 200px;
+    width: auto;
+    object-fit: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+}
+app-balance-card{
+    width: calc(50% - 10px);
+}

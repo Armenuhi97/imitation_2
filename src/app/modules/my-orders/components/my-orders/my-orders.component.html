@@ -1,0 +1,5 @@
+<div class="main-content">
+    <div class="order-card mt-3" *ngFor="let item of myOrders">
+        <app-main-order-card [isMain]="true" [product]="item"></app-main-order-card>
+    </div>
+</div>

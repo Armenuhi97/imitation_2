@@ -1,0 +1,82 @@
+{
+    "validation": {
+        "required": "This is required field",
+        "passwords_are_not_equal": "Passwords are not equal"
+    },
+    "login": {
+        "username": "Username",
+        "password": "Password",
+        "remember_me": "Remember me",
+        "login": "Log In",
+        "is_have_account": "Don’t have account ?",
+        "sign_up": "Sign Up"
+    },
+    "registration": {
+        "sign_up": "Sign Up",
+        "username": "Username",
+        "password": "Password",
+        "phone": "Phone Number",
+        "first_name": "First name",
+        "last_name": "Last name",
+        "confirm_password": "Confirm password",
+        "referal_id": "Referal id",
+        "create_account": "Create Account",
+        "is_have_account": "Do you have account?",
+        "sign_in": "Sign In"
+    },
+    "language": "Language",
+    "menu": {
+        "home": "Home",
+        "my_orders": "My orders",
+        "chat": "Chat",
+        "profile": "Profile"
+    },
+    "home": {
+        "deposit": "Deposit",
+        "withdraw": "Withdraw",
+        "invite_user": "Invite User",
+        "news": {
+            "user_news": "User newses"
+        },
+        "buttons": {
+            "about_us": "About us",
+            "platform_rools": "Platform Rools",
+            "rewards": "Rewards"
+        }
+    },
+    "basket": {
+        "commission": "Commission",
+        "orders": "ords",
+        "opened": "Opened",
+        "closed": "Closed"
+    },
+    "order": {
+        "hint_text": "Click the button \"Get order\" below to make a purchase in the sequential order.",
+        "order_count": "Order count today {{count}}",
+        "get_order": "Get Order"
+    },
+    "notification": "Notification",
+    "order_card": {
+        "collection_time": "Collection time",
+        "order_number": "Order number",
+        "actual_payment": "Actual payment",
+        "commission": "Commission",
+        "refund_amount": "Refund amount",
+        "confirm": "Confirm",
+        "cancel": "Cancel"
+    },
+    "success_modal": {
+        "paid_success": "Paid  successfully",
+        "description": "You can see the record on the order page",
+        "back_to_orders": "Back to orders",
+        "home": "Home"
+    },
+    "balance": {
+        "balance": "Balance",
+        "under_consideration": "Under consideration",
+        "commission": "Сommission for today",
+        "order_completion": "Order completion",
+        "yesterday_commission": "Yesterday's commission",
+        "team_commission": "Team commission"
+    }
+}

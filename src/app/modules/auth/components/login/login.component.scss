@@ -1,0 +1,57 @@
+.login-content {
+    // height: calc(100vh - 32px);
+    display: flex;
+    flex-direction: column;
+    .image {
+        height: 115px;
+        width: 115px;
+        background-repeat: no-repeat;
+    }
+   
+    form {
+        margin-top: 20px;
+    }
+}
+:host::ng-deep {
+    .mat-mdc-checkbox
+        .mdc-checkbox
+        .mdc-checkbox__native-control:enabled:not(:checked):not(:indeterminate):not([data-indeterminate="true"])
+        ~ .mdc-checkbox__background {
+        background: var(--light-color) !important;
+        border: 1px solid var(--main-color) !important;
+        border-radius: 4px;
+    }
+    .mat-mdc-checkbox .mdc-checkbox .mdc-checkbox__native-control:enabled:checked ~ .mdc-checkbox__background,
+    .mat-mdc-checkbox .mdc-checkbox .mdc-checkbox__native-control:enabled:indeterminate ~ .mdc-checkbox__background,
+    .mat-mdc-checkbox
+        .mdc-checkbox
+        .mdc-checkbox__native-control[data-indeterminate="true"]:enabled
+        ~ .mdc-checkbox__background {
+        background-color: var(--main-color) !important;
+        border: 1px solid var(--main-color) !important;
+        border-radius: 4px;
+    }
+    .mat-mdc-checkbox.mat-accent .mdc-checkbox--selected ~ .mdc-checkbox__ripple {
+        background: none !important;
+    }
+    label {
+        margin-bottom: 0 !important;
+        padding: 0 !important;
+        color: var(--light-text-color);
+    }
+}
+.change-language-btn {
+    padding: 4px 8px;
+    background: var(--light-color);
+    border-radius: 8px;
+    color: var(--text-color);
+    display: flex;
+    margin-left: auto;
+    border: none;
+    img {
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        margin-left: 10px;
+    }
+}

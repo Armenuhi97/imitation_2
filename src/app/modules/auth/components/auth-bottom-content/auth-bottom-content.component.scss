@@ -1,0 +1,36 @@
+.bottom-content {
+    margin-top: 35px;
+    button {
+        background: var(--main-gradient-color);
+        border-radius: 4px;
+        padding: 18px 24px;
+        font-family: "Poppins";
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 24px;
+        color: #ffffff;
+        width: 100%;
+        border: none;
+        &:hover {
+            opacity: 0.8;
+        }
+    }
+    .hint-text {
+        text-align: center;
+        margin-top: 16px;
+        font-family: "Poppins";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 22px;
+        color: var(--light-text-color);
+        a {
+            color: var(--main-color);
+            cursor: pointer;
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+    }
+}

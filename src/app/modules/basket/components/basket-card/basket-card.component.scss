@@ -1,0 +1,87 @@
+.basket-card {
+    background: #ffffff;
+    box-shadow: inset 1px 2px 4px rgba(255, 255, 255, 0.25);
+    border-radius: 4px;
+    .basket-card-header {
+        padding: 8px;
+        background: var(--header-color);
+        border-radius: 4px 4px 0 0;
+        img {
+            width: 57px;
+            height: 44px;
+            border-radius: 2px;
+        }
+        .title {
+            font-family: "Sora";
+            font-style: normal;
+            font-weight: 800;
+            font-size: 12px;
+            line-height: 15px;
+            background: var(--main-gradient-color);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .text {
+            font-family: "Poppins";
+            font-style: normal;
+            font-weight: 500;
+            font-size: 8px;
+            line-height: 10px;
+            color: var(--light-text-color);
+        }
+    }
+    .basket-card-content {
+        padding: 8px 10px;
+        .vip-title {
+            font-family: "Sora";
+            font-style: normal;
+            font-weight: 800;
+            font-size: 12px;
+            line-height: 15px;
+            background: var(--main-gradient-color);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .info {
+            font-family: "Poppins";
+            font-style: normal;
+            font-weight: 600;
+            font-size: 12px;
+            line-height: 18px;
+        }
+        img {
+            height: 13px;
+            width: 13px;
+        }
+        .order-info {
+            font-family: "Poppins";
+            font-style: normal;
+            font-weight: 500;
+            font-size: 10px;
+            line-height: 15px;
+            color: #5a5d74;
+        }
+        .order-count {
+            color: #5a67ac;
+        }
+        .opened-btn {
+            background: var(--main-gradient-color);
+        }
+        .closed-btn {
+            background: #5a5d74;
+        }
+        .btn {
+            border-radius: 2px;
+            font-family: "Poppins";
+            font-style: normal;
+            font-weight: 500;
+            font-size: 10px;
+            line-height: 15px;
+            color: #ffffff;
+            border: none;
+            display: flex;
+            margin: 0 auto;
+            padding: 4px 16px;
+        }
+    }
+}

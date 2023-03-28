@@ -1,0 +1,56 @@
+<app-spinner *ngIf="isLoading"></app-spinner>
+
+<div>
+    <div class="text-center mt-2 d-flex align-items-center justify-content-center">
+        <img class="image" src="assets/images/logo.png" alt="">
+        <h1 class="mx-2 logo-title mb-0">WAYFAIR</h1>
+    </div>
+    <h3 class="sign-up-title mt-3">{{'registration.sign_up' | translate}}</h3>
+    <form [formGroup]="registrationForm">
+        <input [placeholder]="'registration.username' | translate | requiredField" class="form-control-input"
+            type="text" formControlName="username">
+        <span
+            *ngIf="registrationForm.get('username')?.hasError('required') && registrationForm.get('username')?.touched"
+            class="validation-error-message">{{'validation.required' | translate}}</span>
+        <input [placeholder]="'registration.phone' | translate | requiredField" prefix="+90" [showMaskTyped]="true"
+            mask=" 000 000 0000" class="form-control-input" type="text" formControlName="phone_number">
+        <span
+            *ngIf="registrationForm.get('phone_number')?.hasError('required') && registrationForm.get('phone_number')?.touched"
+            class="validation-error-message">{{'validation.required' | translate}}</span>
+
+        <input [placeholder]="'registration.first_name' | translate | requiredField" class="form-control-input"
+            type="text" formControlName="first_name">
+
+        <span
+            *ngIf="registrationForm.get('first_name')?.hasError('required') && registrationForm.get('first_name')?.touched"
+            class="validation-error-message">{{'validation.required' | translate}}</span>
+        <input [placeholder]="'registration.last_name' | translate " class="form-control-input" type="text"
+            formControlName="last_name">
+        <app-password-field formControlName="password"
+            [placeholderText]="'registration.password' | translate | requiredField"></app-password-field>
+        <span
+            *ngIf="registrationForm.get('password')?.hasError('required') && registrationForm.get('password')?.touched"
+            class="validation-error-message">{{'validation.required' | translate}}</span>
+        <app-password-field formControlName="confirm_password" [inputId]="'confirm_password'"
+            [placeholderText]="'registration.confirm_password' | translate | requiredField"></app-password-field>
+        <div *ngIf="registrationForm.get('confirm_password')?.touched">
+            <span *ngIf="registrationForm.get('confirm_password')?.hasError('mustMatch')"
+                class="validation-error-message">{{'validation.passwords_are_not_equal' | translate}}</span>
+            <span *ngIf="registrationForm.get('confirm_password')?.hasError('required')"
+                class="validation-error-message">{{'validation.required' | translate}}</span>
+        </div>
+        <input [placeholder]="'registration.referal_id' | translate | requiredField" class="form-control-input"
+            type="text" formControlName="referal_code">
+        <span
+            *ngIf="registrationForm.get('referal_code')?.hasError('required') && registrationForm.get('referal_code')?.touched"
+            class="validation-error-message">{{'validation.required' | translate}}</span>
+
+        <!-- <botdetect-captcha></botdetect-captcha>
+        <input type="text"> -->
+
+        <!-- <ngx-captcha  [config]="captchaConfig"></ngx-captcha> -->
+        <app-auth-bottom-content [buttonText]="'registration.create_account'"
+            [isHaveAccount]="'registration.is_have_account'" [signInOrUpText]="'registration.sign_in'"
+            (actionOnButton)="signUp()" (goByLink)="navigateToLoginPage()"></app-auth-bottom-content>
+    </form>
+</div>

@@ -1,0 +1,41 @@
+.order-info-label {
+    font-family: "Sora";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 13px;
+    line-height: 16px;
+    color: var(--light-text-color);
+}
+.info {
+    font-family: "Sora";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 16px;
+    color: rgba(235, 240, 253, 0.5);
+}
+.color-black {
+    color: #5a5d74;
+}
+.price {
+    background: var(--main-gradient-color);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.product-content {
+    background: #efe7cb;
+    padding: 8px;
+    margin-bottom: 1rem;
+    img {
+        width: 90px;
+        height: 68px;
+    }
+    .name {
+        font-family: "Poppins";
+        font-style: normal;
+        font-weight: 500;
+        font-size: 10px;
+        line-height: 14px;
+        color: var(--header-color);
+    }
+}

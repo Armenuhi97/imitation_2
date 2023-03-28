@@ -1,0 +1,20 @@
+<div class="basket-card">
+    <div class="basket-card-header d-flex">
+        <img [src]="level?.image" alt="">
+        <div class="ml-2 title-desc">
+            <p class="title mb-1">{{level?.description}}</p>
+            <p class="text mb-0">To clalm reawrds or unlock rooms</p>
+        </div>
+    </div>
+    <div class="basket-card-content d-flex justify-content-between">
+        <div class="get-order-content">
+            <p class="hint-text">{{'order.hint_text' | translate}}</p>
+            <div class="order-count text-center" [translate]="'order.order_count'" [translateParams]="{count:orderCount}"></div>
+            <button [disabled]="!orderCount" (click)="getOrder()" class="get-order-btn mt-2 w-100">{{'order.get_order' | translate}}</button>
+
+        </div>
+        <div>
+            <img class="gift-box" src="assets/images/gift-box.png" alt="">
+        </div>
+    </div>
+</div>

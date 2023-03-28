@@ -1,0 +1,77 @@
+.basket-card {
+    background: #ffffff;
+    box-shadow: inset 1px 2px 4px rgba(255, 255, 255, 0.25);
+    border-radius: 4px;
+    .basket-card-header {
+        padding: 8px;
+        background: var(--header-color);
+        border-radius: 4px 4px 0 0;
+        img {
+            width: 57px;
+            height: 44px;
+            border-radius: 2px;
+        }
+        .title-desc {
+            margin-right: 131px;
+        }
+        .title {
+            font-family: "Sora";
+            font-style: normal;
+            font-weight: 700;
+            font-size: 15px;
+            line-height: 19px;
+            background: var(--main-gradient-color);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .text {
+            font-family: "Poppins";
+            font-style: normal;
+            font-weight: 500;
+            font-size: 10px;
+            line-height: 15px;
+            color: var(--light-text-color);
+        }
+    }
+    .basket-card-content {
+        padding: 8px 10px 20px;
+        .hint-text {
+            font-family: "Poppins";
+            font-style: normal;
+            font-weight: 400;
+            font-size: 10px;
+            line-height: 12px;
+            color: #8b8c94;
+        }
+        .gift-box {
+            margin-top: -62px;
+            margin-left: 5px;
+        }
+        .order-count {
+            font-family: "Poppins";
+            font-style: normal;
+            font-weight: 500;
+            font-size: 10px;
+            line-height: 15px;
+
+            /* Text Blue */
+
+            color: #5a5d74;
+        }
+        .get-order-content{
+            width: calc(100% - 131px);
+        }
+        .get-order-btn {
+            padding: 10px;
+            border: none;
+            background: var(--main-gradient-color);
+            border-radius: 4px;
+            font-family: "Sora";
+            font-style: normal;
+            font-weight: 700;
+            font-size: 15px;
+            line-height: 19px;
+            color: var(--light-text-color);
+        }
+    }
+}

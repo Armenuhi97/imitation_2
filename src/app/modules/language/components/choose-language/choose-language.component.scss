@@ -1,0 +1,26 @@
+.language-title {
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 40px;
+    color: var(--light-text-color);
+    margin-bottom: 24px;
+}
+.language-card {
+    background-color: var(--light-color);
+    padding: 8px 16px;
+    margin-top: 10px;
+    color: var(--text-color);
+    border-radius: 4px;
+    img {
+        height: 24px;
+        width: 24px;
+        margin-right: 12px;
+        border-radius: 50%;
+    }
+}
+.active-lng{
+    background: var(--main-gradient-color) !important;
+    font-weight: 700;
+}

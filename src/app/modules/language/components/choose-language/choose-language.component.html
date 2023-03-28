@@ -1,0 +1,8 @@
+<div class="layout">
+    <h3 class="language-title text-center">{{'language' | translate}}</h3>
+    <div [class.active-lng]="lng.code === activeLanguageCode" (click)="selectLanguage(lng)"
+        *ngFor="let lng of allLanguages" class="language-card">
+        <img [src]="lng.icon" alt="">
+        <span>{{lng.title}}</span>
+    </div>
+</div>

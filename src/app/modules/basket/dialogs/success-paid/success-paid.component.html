@@ -1,0 +1,9 @@
+<div class="text-center">
+    <img src="assets/images/check.png" alt="">
+    <h4 class="title mt-2">{{'success_modal.paid_success' | translate}}</h4>
+    <p class="description">{{'success_modal.description' | translate}}</p>
+    <div class="mt-2">
+        <button (click)="closeModal()" class="btn cancel-btn w-100">{{'success_modal.back_to_orders' | translate}}</button>
+        <button routerLink="/main/home" (click)="closeModal()" class="btn confirm-btn mt-3 w-100">{{'success_modal.home' | translate}}</button>
+    </div>
+</div>

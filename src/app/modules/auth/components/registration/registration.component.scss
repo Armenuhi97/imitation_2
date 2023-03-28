@@ -1,0 +1,21 @@
+.sign-up-title {
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 40px;
+    background: var(--main-gradient-color);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.image {
+    width: 45px;
+    height: 45px;
+}
+:host::ng-deep {
+    app-password-field .form-control-input,
+    .form-control-input {
+        padding: 10px 24px;
+        margin: 9px 0;
+    }
+}

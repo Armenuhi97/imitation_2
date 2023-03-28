@@ -1,0 +1,27 @@
+<app-spinner *ngIf="isLoading"></app-spinner>
+<div class="login-content">
+    <button (click)="onChangeLanguage()" class="change-language-btn d-flex justify-content-between align-items-center">
+        {{selectedLanguage?.title}}
+        <img [src]="selectedLanguage?.icon" alt="">
+    </button>
+    <div class="text-center mt-4">
+        <img class="image" src="assets/images/logo.png" alt="">
+        <h1 class="logo-title">WAYFAIR</h1>
+    </div>
+    <form (ngSubmit)="signIn()" [formGroup]="loginForm">
+        <input [placeholder]="'login.username' | translate" class="form-control-input" type="text"
+            formControlName="username">
+        <span *ngIf="loginForm.get('username')?.hasError('required') && loginForm.get('username')?.touched"
+            class="validation-error-message">{{'validation.required' | translate}}</span>
+        <app-password-field formControlName="password"
+            [placeholderText]="'login.password' | translate"></app-password-field>
+        <span *ngIf="loginForm.get('password')?.hasError('required') && loginForm.get('password')?.touched"
+            class="validation-error-message">{{'validation.required' | translate}}</span>
+        <div class="container d-flex justify-content-end">
+            <mat-checkbox formControlName="isRememberMe">{{'login.remember_me' | translate}}</mat-checkbox>
+        </div>
+        <app-auth-bottom-content [buttonText]="'login.login'" [isHaveAccount]="'login.is_have_account'"
+            [signInOrUpText]="'login.sign_up'" (actionOnButton)="signIn()"
+            (goByLink)="navigateToRegistrationPage()"></app-auth-bottom-content>
+    </form>
+</div>

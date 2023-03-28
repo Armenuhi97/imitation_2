@@ -1,0 +1,3 @@
+<div class="main-content d-flex align-items-center flex-wrap justify-content-between">
+    <app-basket-card *ngFor="let level of basket$ | async" [item]="level" [user]="user"></app-basket-card>
+</div>

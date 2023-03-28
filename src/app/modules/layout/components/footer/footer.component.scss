@@ -1,0 +1,51 @@
+.footer {
+    background: var(--header-color);
+    box-shadow: inset 1px 2px 4px rgba(255, 255, 255, 0.25);
+    backdrop-filter: blur(13.5914px);
+    min-height: fit-content;
+    border-radius: 45px 45px 0 0;
+    margin-top: 10px;
+    padding: 6px 24px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    i,
+    .title {
+        color: #979797;
+    }
+    i {
+        font-size: 20px;
+    }
+    .title {
+        font-family: "Poppins";
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 18px;
+    }
+    a {
+        text-decoration: none !important;
+    }
+}
+.selected-menu {
+    i {
+        background: var(--main-gradient-color);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+    .title {
+        background: var(--main-gradient-color);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        text-fill-color: transparent;
+    }
+}
+
+.basket-icon {
+    background: var(--main-gradient-color);
+    backdrop-filter: blur(2.5px);
+    border-radius: 50%;
+    width: 55px;
+    height: 55px;
+    margin-top: -62px;
+}

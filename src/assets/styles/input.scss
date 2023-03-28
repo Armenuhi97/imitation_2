@@ -1,0 +1,23 @@
+.form-control-input {
+    background: var(--light-color);
+    border-radius: 4px;
+    padding: 18px 24px;
+    width: 100%;
+    border: none;
+    margin: 12px 0;
+    color: var(--text-color);
+    &:focus {
+        border: 1px solid var(--main-color);
+        outline: none !important;
+    }
+    &::placeholder {
+        color: var(--placeholder-color);
+    }
+}
+.validation-error-message {
+    color: red;
+    margin-top: 10px;
+}
+.main-content{
+    padding: 16px;
+}

@@ -1,0 +1,31 @@
+<p *ngIf="isMain" class="d-flex align-items-center justify-content-between">
+    <span class="order-info-label">{{'order_card.collection_time' | translate}} :</span>
+    <span class="info">{{product?.date | date:'YYYY-MM-dd HH:mm'}}</span>
+</p>
+<p *ngIf="isMain" class="d-flex align-items-center justify-content-between">
+    <span class="order-info-label">{{'order_card.order_number' | translate}} :</span>
+    <span class="info">{{product?.id}}</span>
+</p>
+<div class="product-content d-flex align-items-center">
+    <img [src]="fileUrl+product?.product?.image" alt="">
+    <div class="ml-2">
+        <p class="name">{{product?.product?.description}} </p>
+        <div class="d-flex align-items-center justify-content-between">
+            <span class="info color-black">{{product?.price}}$</span>
+            <!-- <span class="ml-1 info color-black">x2</span> -->
+        </div>
+    </div>
+</div>
+<p class="d-flex align-items-center justify-content-between">
+    <span class="order-info-label">{{'order_card.actual_payment' | translate}} :</span>
+    <span class="info">{{product?.price}}$</span>
+</p>
+<p class="d-flex align-items-center justify-content-between">
+    <span class="order-info-label">{{'order_card.commission' | translate}} :</span>
+    <span class="info price">{{product?.percent_price || product?.transaction?.amount}}$</span>
+</p>
+
+<p *ngIf="!isMain" class="d-flex align-items-center justify-content-between">
+    <span class="order-info-label">{{'order_card.refund_amount' | translate}} :</span>
+    <span class="info">{{(product?.price || 0)+(product?.percent_price || 0)}}</span>
+</p>

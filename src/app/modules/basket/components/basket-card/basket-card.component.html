@@ -1,0 +1,32 @@
+<div class="basket-card mt-3">
+    <div class="basket-card-header d-flex">
+        <img [src]="item.image" alt="">
+        <div class="ml-2">
+            <p class="title mb-2">{{item.description}}</p>
+            <p class="text mb-0">To clalm reawrds or unlock rooms</p>
+        </div>
+    </div>
+    <div class="basket-card-content">
+        <div class="d-flex justify-content-between">
+            <span class="vip-title">{{item.title}}</span>
+            <div class="ml-1">
+                <div class="info">
+                    <img src="assets/icons/money.svg" alt="">
+                    <span class="ml-2">{{item.price}}$</span>
+                </div>
+                <div class="info">
+                    <img src="assets/icons/user.svg" alt="">
+                    <span class="ml-2">0/{{item.person_count}}</span>
+                </div>
+            </div>
+        </div>
+        <div class="mt-2 order-info d-flex align-items-center justify-content-between">
+            <span>{{'basket.commission' | translate}} {{item.percent}}%</span>
+            <span class="order-count ml-1">{{item.person_count}} {{'basket.orders' | translate}}</span>
+        </div>
+        <button [disabled]="user.level !== item.id" [routerLink]="'product/'+item.id"
+            [ngClass]="user.level !== item.id?'closed-btn':'opened-btn'" class=" btn mt-2">
+            {{(user.level === item.id?'basket.opened':'basket.closed') | translate}}
+        </button>
+    </div>
+</div>

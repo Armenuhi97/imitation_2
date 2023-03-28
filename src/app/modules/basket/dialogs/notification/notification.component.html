@@ -1,0 +1,8 @@
+<app-spinner *ngIf="isLoading"></app-spinner>
+
+<h3 class="text-center title">{{'notification' | translate}}</h3>
+<app-main-order-card [product]="product"></app-main-order-card>
+<div class="d-flex align-items-center justify-content-around">
+    <button (click)="closeModal(false)" class="btn cancel-btn">{{'order_card.cancel' | translate}}</button>
+    <button (click)="createOrder()" class="btn confirm-btn ml-2">{{'order_card.confirm' | translate}}</button>
+</div>

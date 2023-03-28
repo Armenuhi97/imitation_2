@@ -1,0 +1,12 @@
+.layout-content{
+    display: flex;
+    flex-direction: column;
+}
+app-footer{
+    margin-top: auto;
+}
+.scroll-content{
+    /* height: calc(100vh - 150px); */
+    margin-bottom: 95px;
+    overflow-y: auto;
+}

@@ -1,0 +1,28 @@
+{
+    "validation": {
+        "required": "This is required field_ru",
+        "passwords_are_not_equal": "Passwords are not equal"
+    },
+    "login": {
+        "username": "Username_ru",
+        "password": "Password_ru",
+        "remember_me": "Remember me_ru",
+        "login": "Log In_ru",
+        "is_have_account": "Don’t have account ?_ru",
+        "sign_up": "Sign Up"
+    },
+    "registration": {
+        "sign_up": "Sign Up_ru",
+        "username": "Username_ru",
+        "password": "Password_ru",
+        "phone": "Phone Number_ru",
+        "first_name": "First name_ru",
+        "last_name": "Last name_ru",
+        "confirm_password": "Confirm password_ru",
+        "referal_id": "Referal id_ru",
+        "create_account": "Create Account_ru",
+        "is_have_account": "Do you have account?_ru",
+        "sign_in": "Sign In"
+    },
+    "language": "Language_ru"
+}

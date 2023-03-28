@@ -1,0 +1,8 @@
+<div class="news-content">
+    <h3 class="news-title">{{'home.news.user_news' | translate}}</h3>
+    <div *ngFor="let item of [1,2,3]; let i=index;let last=last"
+        class="d-flex align-items-center justify-content-between mt-2" [class.section]="!last">
+        <p class="news">Ccongratulations User 1t***1 earned money</p>
+        <p class="price-item ml-2 d-flex align-items-center"><span class="price mr-1">12200</span> coin</p>
+    </div>
+</div>
