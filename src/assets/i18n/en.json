@@ -63,7 +63,14 @@
         "commission": "Commission",
         "refund_amount": "Refund amount",
         "confirm": "Confirm",
-        "cancel": "Cancel"
+        "cancel": "Cancel",
+        "filter":{
+            "all":"All orders",
+            "canceled":"Canceled",
+            "waiting":"Waiting",
+            "closed":"Closed",
+            "in_progress":"In progress"
+        }
     },
     "success_modal": {
         "paid_success": "Paid  successfully",
@@ -79,7 +86,7 @@
         "yesterday_commission": "Yesterday's commission",
         "team_commission": "Team commission"
     },
-    "account": {
+    "auction": {
         "balance": "Balance",
         "profit": "Profit",
         "benefit": "Benefit",

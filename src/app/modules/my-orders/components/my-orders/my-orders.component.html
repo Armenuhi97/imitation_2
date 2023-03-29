@@ -1,4 +1,10 @@
 <div class="main-content">
+    <div class="filter-content">
+        <select [formControl]="filterControl" class="select-filter">
+            <option *ngFor="let filter of filterList" [value]="filter.type">{{('order_card.filter.'+filter.type) |
+                translate}}</option>
+        </select>
+    </div>
     <div class="order-card mt-3" *ngFor="let item of myOrders">
         <app-main-order-card [isMain]="true" [product]="item"></app-main-order-card>
     </div>

@@ -1,6 +1,8 @@
 import { Component, OnDestroy, OnInit } from '@angular/core';
+import { FormControl } from '@angular/forms';
 import { Subject, takeUntil } from 'rxjs';
 import { MyOrderService } from '../../services/my-order.service';
+import { OrderFilter } from '../../utils/order-types';
 
 @Component({
   selector: 'app-my-orders',
@@ -10,6 +12,8 @@ import { MyOrderService } from '../../services/my-order.service';
 export class MyOrdersComponent implements OnInit, OnDestroy {
   unsubscribe$ = new Subject<void>();
   myOrders: any = [];
+  filterList=OrderFilter;
+  filterControl=new FormControl('all');
   constructor(private myOrderService: MyOrderService) { }
   ngOnInit(): void {
     this.getMyOrder();
