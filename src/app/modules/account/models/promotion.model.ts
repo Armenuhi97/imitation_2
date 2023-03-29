@@ -6,3 +6,7 @@ export interface IPromotion {
     price: number;
     title: string;
 }
+export interface PromotionData {
+    promotion: number;
+    price: number;
+}

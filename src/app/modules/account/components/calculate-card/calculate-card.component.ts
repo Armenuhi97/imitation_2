@@ -7,5 +7,5 @@ import { Component, Input } from '@angular/core';
 })
 export class CalculateCardComponent {
   @Input() title = '';
-  @Input() price:number | string = 0;
+  @Input() price?:number = 0;
 }

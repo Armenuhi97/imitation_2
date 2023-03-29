@@ -4,17 +4,19 @@ import { AccountComponent } from './components/account/account.component';
 import { TranslateModule } from '@ngx-translate/core';
 import { AccountRoutingModule } from './account-routing.module';
 import { CalculateCardComponent } from './components/calculate-card/calculate-card.component';
-import { ProptionCardComponent } from './components/proption-card/proption-card.component';
 import { PromotionService } from './services/promotion.service';
+import { FormsModule } from '@angular/forms';
+import { PromotionCardComponent } from './components/promotion-card/promotion-card.component';
 
 
 
 @NgModule({
-  declarations: [AccountComponent, CalculateCardComponent, ProptionCardComponent],
+  declarations: [AccountComponent, CalculateCardComponent, PromotionCardComponent],
   imports: [
     CommonModule,
     TranslateModule,
-    AccountRoutingModule
+    AccountRoutingModule,
+    FormsModule
   ],
   providers: [PromotionService]
 })

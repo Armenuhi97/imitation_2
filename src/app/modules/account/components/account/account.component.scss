@@ -4,7 +4,7 @@ app-calculate-card {
     width: calc(25% - 5px);
 }
 
-app-proption-card {
+app-promotion-card {
     width: calc(50% - 5px);
     margin-top: 16px;
 }
@@ -20,7 +20,7 @@ app-proption-card {
     font-weight: 700;
     font-size: 14px;
     line-height: 18px;
-    span {
+    span, input {
         width: calc((85% - 10px) / 2);
     }
 }
@@ -29,6 +29,10 @@ app-proption-card {
 }
 .transfer-amount {
     color: #5a5d74;
+    input{
+        border: none;
+        background: none;
+    }
 }
 .border-line {
     height: 21px;
