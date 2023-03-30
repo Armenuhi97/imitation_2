@@ -50,7 +50,7 @@ export class AccountComponent implements OnInit, OnDestroy {
     this.errorMessage = '';
     if (this.activePromotion) {
       if (this.transferPrice >= this.activePromotion.price && this.transferPrice <= this.balanceContent!.balance) {
-        const promotionDto = new PromotionDto({ price: this.estimatedIncome, promotion: this.activePromotion.id });
+        const promotionDto = new PromotionDto({ price: +this.transferPrice, promotion: this.activePromotion.id });
         this.isLoading = true;
         this.isClick = true;
         this.promotionService.createUserPromotion(promotionDto).pipe(takeUntil(this.unsubscribe$),
