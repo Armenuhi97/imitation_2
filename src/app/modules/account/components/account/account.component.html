@@ -1,3 +1,4 @@
+<app-spinner *ngIf="isLoading"></app-spinner>
 <div class="main-content">
     <div class="d-flex align-self-stretch justify-content-between flex-wrap">
         <app-calculate-card [title]="'auction.balance'" [price]="balanceContent?.balance"></app-calculate-card>
@@ -16,14 +17,15 @@
     <div class="amount estimated d-flex align-items-center justify-content-around">
         <span> {{'auction.estimated_income' | translate}}</span>
         <span class="border-line"></span>
-        <span>{{estimatedIncome}}</span>
+        <span>{{estimatedIncome | fixed}}</span>
     </div>
     <div class="d-flex align-items-center justify-content-between flex-wrap">
         <app-promotion-card (select)="selectPromotion(item)" [isActive]="activePromotion?.id === item?.id"
             *ngFor="let item of promotions$ | async" [promotion]="item"></app-promotion-card>
     </div>
 
-    <div><button (click)="transfer()" class="btn w-100 mt-2 confirm-btn ">{{'auction.transfer' | translate}}</button>
+    <div><button (click)="transfer()" class="btn w-100 mt-4 confirm-btn ">{{'auction.transfer' | translate}}</button>
     </div>
+    <span style="color:red">{{errorMessage}}</span>
     <div><button class="btn w-100 mt-2 cancel-btn">{{'auction.transfer_list' | translate}}</button></div>
 </div>

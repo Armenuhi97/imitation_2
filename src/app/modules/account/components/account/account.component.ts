@@ -1,5 +1,5 @@
 import { Component, OnDestroy, OnInit } from '@angular/core';
-import { Observable, Subject, switchMap, takeUntil, tap } from 'rxjs';
+import { finalize, Observable, Subject, switchMap, takeUntil, tap } from 'rxjs';
 import { PromotionDto } from '../../dto/promotion.dto';
 import { IBalance } from '../../models/balance.model';
 import { IPromotion } from '../../models/promotion.model';
@@ -15,14 +15,15 @@ export class AccountComponent implements OnInit, OnDestroy {
   promotions$: Observable<IPromotion[]>;
   transferPrice: number = 0;
   estimatedIncome: number = 0;
-  activePromotion?: IPromotion;
+  activePromotion?: IPromotion | null;
   balanceContent?: IBalance;
   errorMessage: string = '';
+  isLoading = false;
   constructor(private promotionService: PromotionService) {
     this.promotions$ = this.promotionService.getPromotions();
   }
   ngOnInit(): void {
-    this.getBalance().pipe(takeUntil(this.unsubscribe$)).subscribe;
+    this.getBalance().pipe(takeUntil(this.unsubscribe$)).subscribe();
   }
   selectPromotion(item: IPromotion): void {
     this.activePromotion = item;
@@ -41,16 +42,30 @@ export class AccountComponent implements OnInit, OnDestroy {
       this.estimatedIncome = this.transferPrice * this.activePromotion.percent * this.activePromotion.duration
     }
   }
+  isClick = false;
   transfer(): void {
+    if (this.isClick) {
+      return;
+    }
+    this.errorMessage = '';
     if (this.activePromotion) {
       if (this.transferPrice >= this.activePromotion.price && this.transferPrice <= this.balanceContent!.balance) {
         const promotionDto = new PromotionDto({ price: this.estimatedIncome, promotion: this.activePromotion.id });
+        this.isLoading = true;
+        this.isClick = true;
         this.promotionService.createUserPromotion(promotionDto).pipe(takeUntil(this.unsubscribe$),
+          finalize(() => { this.isLoading = false; this.isClick = false; }),
           switchMap(() => {
             return this.getBalance()
-          })).subscribe();
+          })).subscribe({
+            next: () => {
+              this.transferPrice = 0;
+              this.estimatedIncome = 0;
+              this.activePromotion = null;
+            }
+          });
       } else {
-        this.errorMessage = 'Error';
+        this.errorMessage = `transform price must be more than ${this.activePromotion.price} and less than ${this.balanceContent!.balance}`;
       }
     }
   }
