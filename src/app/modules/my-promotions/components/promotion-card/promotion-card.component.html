@@ -1,0 +1,18 @@
+<div class="card">
+    <div class="detail d-flex align-items-center justify-content-between">
+        <label>{{'my_promotions.amount_of_money' | translate}}</label>
+        <span class="price">$ {{promotion?.price}}</span>
+    </div>
+    <div class="detail d-flex align-items-center justify-content-between">
+        <label>{{'my_promotions.order_number' | translate}} :</label>
+        <span>{{promotion?.id}}</span>
+    </div>
+    <div class="detail d-flex align-items-center justify-content-between">
+        <label>{{'my_promotions.collection_time' | translate}} :</label>
+        <span>{{promotion?.date | date:'YYYY.MM.dd HH:mm:ss'}}</span>
+    </div>
+    <div class="detail d-flex align-items-center justify-content-between">
+        <label>{{'my_promotions.release_status' | translate}} :</label>
+        <span [ngClass]="promotion?.status === 'pending'?'pending':'success'">{{promotion?.status}}</span>
+    </div>
+</div>

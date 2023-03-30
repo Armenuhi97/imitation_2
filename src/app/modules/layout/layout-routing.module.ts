@@ -7,7 +7,9 @@ const routes: Routes = [{
         { path: '', redirectTo: 'home', pathMatch: 'full' },
         { path: 'home', loadChildren: () => import('../home/home.module').then(m => m.HomeModule) },
         { path: 'my-orders', loadChildren: () => import('../my-orders/my-orders.module').then(m => m.MyOrdersModule) },
-        { path: 'basket', loadChildren: () => import('../basket/basket.module').then(m => m.BasketModule) }
+        { path: 'basket', loadChildren: () => import('../basket/basket.module').then(m => m.BasketModule) },
+        { path: 'my-promotions', loadChildren: () => import('src/app/modules/my-promotions/my-promotions.module').then(m => m.MyPromotionsModule) }
+
     ]
 }]
 @NgModule({

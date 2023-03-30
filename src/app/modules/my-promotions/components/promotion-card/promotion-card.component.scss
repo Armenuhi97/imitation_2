@@ -1,0 +1,37 @@
+.card {
+    background: var(--header-color);
+    border-radius: 14px;
+    padding: 16px;
+    margin-top: 10px;
+
+    .detail {
+        margin-top: 5px;
+        label {
+            font-family: "Sora";
+            font-style: normal;
+            font-weight: 700;
+            font-size: 12px;
+            line-height: 15px;
+            color: var(--light-text-color);
+        }
+        .price, .pending {
+            background: var(--main-gradient-color);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            text-fill-color: transparent;
+        }
+        span {
+            font-family: "Sora";
+            font-style: normal;
+            font-weight: 400;
+            font-size: 13px;
+            line-height: 16px;
+            color: rgba(235, 240, 253, 0.5);
+        }
+    }
+}
+
+.success {
+    color: rgb(17, 87, 17) !important;
+}

@@ -1,4 +1,4 @@
 <div class="card">
-    <p class="title">{{title | translate}}</p>
-    <p class="price">{{price || 0 | fixed}}$</p>
+    <p class="title mb-2">{{title | translate}}</p>
+    <p class="price"><span *ngIf="isShowPlus">+</span> {{price || 0 | fixed}}$</p>
 </div>

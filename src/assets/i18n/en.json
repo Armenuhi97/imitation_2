@@ -41,7 +41,8 @@
         "buttons": {
             "about_us": "About us",
             "platform_rools": "Platform Rools",
-            "rewards": "Rewards"
+            "rewards": "Rewards",
+            "auction":"Auction"
         }
     },
     "basket": {
@@ -64,12 +65,12 @@
         "refund_amount": "Refund amount",
         "confirm": "Confirm",
         "cancel": "Cancel",
-        "filter":{
-            "all":"All orders",
-            "canceled":"Canceled",
-            "waiting":"Waiting",
-            "closed":"Closed",
-            "in_progress":"In progress"
+        "filter": {
+            "all": "All orders",
+            "canceled": "Canceled",
+            "waiting": "Waiting",
+            "closed": "Closed",
+            "in_progress": "In progress"
         }
     },
     "success_modal": {
@@ -98,5 +99,11 @@
         "duration": "Duration",
         "commission": "Commission",
         "day": "Day"
+    },
+    "my_promotions": {
+        "amount_of_money": "Amount of money",
+        "order_number": "Order number",
+        "collection_time": "Collection time",
+        "release_status": "Release status"
     }
 }

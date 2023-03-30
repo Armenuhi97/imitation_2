@@ -18,6 +18,7 @@ export class AccountComponent implements OnInit, OnDestroy {
   activePromotion?: IPromotion | null;
   balanceContent?: IBalance;
   errorMessage: string = '';
+  isClick = false;
   isLoading = false;
   constructor(private promotionService: PromotionService) {
     this.promotions$ = this.promotionService.getPromotions();
@@ -38,11 +39,10 @@ export class AccountComponent implements OnInit, OnDestroy {
     this.calculateEstimatedIncome();
   }
   private calculateEstimatedIncome(): void {
-    if (this.transferPrice && this.activePromotion) {
-      this.estimatedIncome = this.transferPrice * this.activePromotion.percent * this.activePromotion.duration
+    if (this.activePromotion) {
+      this.estimatedIncome = this.transferPrice * this.activePromotion.percent/100 * this.activePromotion.duration
     }
   }
-  isClick = false;
   transfer(): void {
     if (this.isClick) {
       return;
@@ -54,7 +54,7 @@ export class AccountComponent implements OnInit, OnDestroy {
         this.isLoading = true;
         this.isClick = true;
         this.promotionService.createUserPromotion(promotionDto).pipe(takeUntil(this.unsubscribe$),
-          finalize(() => { this.isLoading = false; this.isClick = false; }),
+          finalize(() => { this.isLoading = false; this.isClick = false }),
           switchMap(() => {
             return this.getBalance()
           })).subscribe({

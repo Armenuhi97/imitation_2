@@ -28,5 +28,9 @@ export const ButtonSectionMenu = [
     {
         path: 'rewards',
         title: 'rewards'
+    },
+    {
+        path: 'auction',
+        title: 'auction'
     }
 ]
