@@ -6,3 +6,6 @@ export interface IBalance {
     ['urish tiv']?: number | string;
     yesterday_balance: number | string;
 }
+export interface IMyLevel {
+    user_with_my_referal: number;
+}

@@ -1,5 +1,6 @@
 import { Component, Input } from '@angular/core';
 import { IUser } from 'src/app/models/user.model';
+import { IMyLevel } from '../../models/balance.model';
 import { ILevel } from '../../models/livel.model';
 
 @Component({
@@ -10,4 +11,5 @@ import { ILevel } from '../../models/livel.model';
 export class BasketCardComponent {
   @Input() item: ILevel = {} as ILevel;
   @Input() user: IUser = {} as IUser;
+  @Input() myLevel?: IMyLevel;
 }
