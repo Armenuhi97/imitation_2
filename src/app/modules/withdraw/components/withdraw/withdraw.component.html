@@ -1,0 +1,4 @@
+<app-empty-withdraw *ngIf="isFull else empty"></app-empty-withdraw>
+<ng-template #empty>
+    <app-full-withdraw></app-full-withdraw>
+</ng-template>

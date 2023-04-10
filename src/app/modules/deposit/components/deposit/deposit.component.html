@@ -1,0 +1,23 @@
+<div class="main-content">
+    <div class="qr-content text-center">
+        <img src="assets/images/qr.png" alt="">
+        <p class="download-text mt-2">{{'deposit.download_qr' | translate}} <img src="assets/icons/download-icon.svg"
+                alt=""></p>
+    </div>
+    <div class="copy-text d-flex justify-content-between align-items-center mt-2">
+        <span class="text">ljkdger64adligme2f16svlkjrthm3sd</span>
+        <button [text-copy]="'ljkdger64adligme2f16svlkjrthm3sd'" class="ml-2 copy-btn">{{'deposit.copy_id' |
+            translate}}</button>
+    </div>
+    <div class="mt-4">
+        <div class="mt-2">
+            <label class="label">Replenishment amount</label>
+            <input class="input-money" type="number" [formControl]="replanishmentAmountControl">
+        </div>
+        <div class="mt-2">
+            <label class="label">Replenishment amount</label>
+            <div  class="input-money"> ljkdger64adligme2f16svlkjrthm3sd</div>
+        </div>
+    </div>
+    <button class="pay-btn mt-4">{{'deposit.pay'| translate}}</button>
+</div>

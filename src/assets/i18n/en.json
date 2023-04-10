@@ -42,7 +42,7 @@
             "about_us": "About us",
             "platform_rools": "Platform Rools",
             "rewards": "Rewards",
-            "auction":"Auction"
+            "auction": "Auction"
         }
     },
     "basket": {
@@ -105,5 +105,14 @@
         "order_number": "Order number",
         "collection_time": "Collection time",
         "release_status": "Release status"
+    },
+    "deposit": {
+        "download_qr": "Download QR kode ",
+        "copy_id": "Copy ID",
+        "pay":"Pay"
+    },
+    "withdraw":{
+        "internal_currency":"Internal currency",
+        "password":"Password"
     }
 }

@@ -9,7 +9,6 @@ const routes: Routes = [{
         { path: 'my-orders', loadChildren: () => import('../my-orders/my-orders.module').then(m => m.MyOrdersModule) },
         { path: 'basket', loadChildren: () => import('../basket/basket.module').then(m => m.BasketModule) },
         { path: 'my-promotions', loadChildren: () => import('src/app/modules/my-promotions/my-promotions.module').then(m => m.MyPromotionsModule) }
-
     ]
 }]
 @NgModule({

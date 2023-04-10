@@ -9,6 +9,9 @@ body {
 .layout {
     padding: 16px 24px;
 }
+input:-internal-autofill-selected {
+    background: #efe7cb !important;
+}
 .layout-background{
     background-image: url('/assets/images/background.png');
     background-repeat: no-repeat;

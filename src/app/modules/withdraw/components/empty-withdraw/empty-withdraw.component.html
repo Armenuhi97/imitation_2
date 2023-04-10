@@ -1,0 +1,12 @@
+<div class="main-content">
+    <form [formGroup]="withdrawGroup">
+        <div>
+            <label class="label">{{'withdraw.internal_currency' | translate}}</label>
+            <input class="input-money" formControlName="currency" type="text">
+        </div>
+        <div>
+            <label class="label">{{'withdraw.password' | translate}}</label>
+            <app-password-field formControlName="password"></app-password-field>
+        </div>
+    </form>
+</div>
