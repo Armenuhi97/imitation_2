@@ -1,5 +1,7 @@
 import { Component } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
+import { IUser } from 'src/app/models/user.model';
+import { UserService } from 'src/app/services/user.service';
 
 @Component({
   selector: 'app-full-withdraw',
@@ -8,9 +10,10 @@ import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 })
 export class FullWithdrawComponent {
   withdrawGroup: FormGroup;
-
-  constructor(private fb: FormBuilder) {
+  user: IUser;
+  constructor(private fb: FormBuilder, private userService: UserService) {
     this.withdrawGroup = this.initGroup();
+    this.user = this.userService.getUser();
   }
 
   private initGroup(): FormGroup {

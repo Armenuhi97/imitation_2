@@ -4,7 +4,7 @@
         <img class="ml-2" src="assets/icons/circleWavyCheck.svg" alt="">
     </div>
     <div class="d-flex align-items-center justify-content-between mt-2">
-        <p class="mb-2 text">THK***********BJKa</p>
+        <p class="mb-2 text">{{user.wallet | creditDebitMaskPipe:4}}</p>
         <p class="mb-0 text ml-2">TRC20</p>
     </div>
 </div>

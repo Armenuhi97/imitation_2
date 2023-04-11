@@ -10,7 +10,7 @@ import {
 export class TextCopyDirective {
 
     // Parse attribute value into a 'text' variable
-    @Input('text-copy') text: string = '';
+    @Input('text-copy') text: string | undefined = '';
 
     constructor() {
     }
@@ -18,7 +18,9 @@ export class TextCopyDirective {
 
     // The HostListener will listen to click events and run the below function, the HostListener supports other standard events such as mouseenter, mouseleave etc.
     @HostListener('click') copyText() {
-
+        if (!this.text) {
+            return;
+        }
         // We need to create a dummy textarea with the text to be copied in the DOM
         var textArea = document.createElement("textarea");
 

@@ -1,6 +1,6 @@
 <div class="main-content">
-    <app-empty-withdraw *ngIf="isFull else empty"></app-empty-withdraw>
+    <app-empty-withdraw (createWallet)="getWallet()" *ngIf="!isHasWallet else full"></app-empty-withdraw>
 </div>
-<ng-template #empty>
+<ng-template #full>
     <app-full-withdraw></app-full-withdraw>
 </ng-template>

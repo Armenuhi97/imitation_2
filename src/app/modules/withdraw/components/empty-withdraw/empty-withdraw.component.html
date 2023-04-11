@@ -1,12 +1,10 @@
+<app-spinner *ngIf="isLoading"></app-spinner>
 <form [formGroup]="withdrawGroup">
     <div>
         <label class="label">{{'withdraw.internal_currency' | translate}}</label>
         <input class="input-money" formControlName="currency" type="text">
     </div>
-    <div class="mt-2">
-        <label class="label">{{'withdraw.password' | translate}}</label>
-        <app-password-field formControlName="password"></app-password-field>
-    </div>
-    <button class="pay-btn mt-4">{{'withdraw.pay'| translate}}</button>
+
+    <button (click)="setWallet()" class="pay-btn mt-4">{{'withdraw.pay'| translate}}</button>
 
 </form>

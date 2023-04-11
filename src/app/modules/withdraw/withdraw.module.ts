@@ -8,21 +8,26 @@ import { FullWithdrawComponent } from './components/full-withdraw/full-withdraw.
 import { TranslateModule } from '@ngx-translate/core';
 import { ReactiveFormsModule } from '@angular/forms';
 import { PasswordModule } from '../password/password.module';
+import { WithdrawService } from './services/withdraw.service';
+import { LoaderModule } from '../loader/loader.module';
+import { CreditDebitMaskPipePipe } from './pipes/card-number.pipe';
 
 
 @NgModule({
   declarations: [
     WithdrawComponent,
     EmptyWithdrawComponent,
-    FullWithdrawComponent
+    FullWithdrawComponent,
+    CreditDebitMaskPipePipe
   ],
   imports: [
     CommonModule,
     WithdrawRoutingModule,
     TranslateModule,
     ReactiveFormsModule,
-    PasswordModule
-
-  ]
+    PasswordModule,
+    LoaderModule
+  ],
+  providers: [WithdrawService]
 })
 export class WithdrawModule { }

@@ -1,5 +1,7 @@
 import { Component } from '@angular/core';
 import { FormControl, Validators } from '@angular/forms';
+import { IUser } from 'src/app/models/user.model';
+import { UserService } from 'src/app/services/user.service';
 
 @Component({
   selector: 'app-deposit',
@@ -8,4 +10,6 @@ import { FormControl, Validators } from '@angular/forms';
 })
 export class DepositComponent {
   replanishmentAmountControl = new FormControl(null, Validators.required);
+  constructor() {
+  }
 }
