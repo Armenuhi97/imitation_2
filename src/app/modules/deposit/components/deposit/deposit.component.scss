@@ -36,21 +36,3 @@
         }
     }
 }
-.pay-btn {
-    background: var(--main-gradient-color);
-    padding: 12px;
-    font-family: "Sora";
-    font-style: normal;
-    font-weight: 700;
-    font-size: 15px;
-    line-height: 19px;
-    text-align: center;
-    color: #ffffff;
-    width: 100%;
-    border: none;
-    text-align: center;
-    border-radius: 2px;
-    &:hover{
-        opacity: 0.8;
-    }
-}

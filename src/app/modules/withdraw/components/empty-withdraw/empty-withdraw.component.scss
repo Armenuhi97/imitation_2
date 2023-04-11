@@ -1,1 +1,13 @@
-@import url("/src/assets/styles/input-money.scss");
+:host::ng-deep {
+    app-password-field {
+        input {
+            padding: 9px !important;
+            border: 1px solid var(--header-color);
+            text-align: center;
+            margin-top: 0 !important;
+        }
+        .field-icon {
+            top: 39% !important;
+        }
+    }
+}

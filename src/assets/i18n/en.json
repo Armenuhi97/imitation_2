@@ -113,6 +113,9 @@
     },
     "withdraw":{
         "internal_currency":"Internal currency",
-        "password":"Password"
+        "password":"Password",
+        "pay":"Pay",
+        "available_amount":"Available amount",
+        "withdrawal_amount":"Withdrawal amount"
     }
 }

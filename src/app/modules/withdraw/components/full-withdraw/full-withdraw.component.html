@@ -1,1 +1,25 @@
-<p>full-withdraw works!</p>
+<div class="internal-currency">
+    <div class="d-flex align-items-center justify-content-between">
+        <h4 class="title">{{'withdraw.internal_currency' | translate}}</h4>
+        <img class="ml-2" src="assets/icons/circleWavyCheck.svg" alt="">
+    </div>
+    <div class="d-flex align-items-center justify-content-between mt-2">
+        <p class="mb-2 text">THK***********BJKa</p>
+        <p class="mb-0 text ml-2">TRC20</p>
+    </div>
+</div>
+<form class="mt-2" [formGroup]="withdrawGroup">
+    <div>
+        <label class="label">{{'withdraw.available_amount' | translate}}</label>
+        <input class="input-money" formControlName="available_amount" type="text">
+    </div>
+    <div>
+        <label class="label">{{'withdraw.withdrawal_amount' | translate}}</label>
+        <input class="input-money" formControlName="withdrawal_amount" type="text">
+    </div>
+    <div class="mt-2">
+        <label class="label">{{'withdraw.password' | translate}}</label>
+        <app-password-field formControlName="password"></app-password-field>
+    </div>
+    <button class="pay-btn mt-4">{{'withdraw.pay'| translate}}</button>
+</form>
