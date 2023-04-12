@@ -1,0 +1,109 @@
+{
+    "validation": {
+        "required": "Bu zorunlu alan",
+        "passwords_are_not_equal": "Parolalar eşleşmemekte"
+    },
+    "login": {
+        "username": "Kullanıcı adı",
+        "password": "Şifre",
+        "remember_me": "Beni Hatırla",
+        "login": "Giriş yapmak",
+        "is_have_account": "Hesabınız yok mu?",
+        "sign_up": "Üye olmak"
+    },
+    "registration": {
+        "sign_up": "Üye olmak",
+        "username": "Kullanıcı adı",
+        "password": "Şifre",
+        "phone": "Telefon numarası",
+        "first_name": "İlk adı",
+        "last_name": "Soy isim",
+        "confirm_password": "Şifreyi Onayla",
+        "referal_id": "Sevk kimliği",
+        "create_account": "Hesap oluşturmak",
+        "is_have_account": "hesabınız var mı",
+        "sign_in": "Kayıt olmak"
+    },
+    "language": "Dil",
+    "menu": {
+        "home": "Ev",
+        "my_orders": "Siparişlerim",
+        "chat": "Sohbet",
+        "profile": "Profil"
+    },
+    "home": {
+        "deposit": "Depozito",
+        "withdraw": "Geri çekilmek",
+        "invite_user": "Kullanıcı Davet",
+        "news": {
+            "user_news": "Kullanıcı haberleri"
+        },
+        "buttons": {
+            "about_us": "Hakkımızda",
+            "platform_rools": "Platform Kuralları",
+            "rewards": "Ödüller",
+            "auction": "Yatırım"
+        }
+    },
+    "basket": {
+        "commission": "Komisyon",
+        "orders": "İnsan",
+        "opened": "Açıldı",
+        "closed": "Kapalı"
+    },
+    "order": {
+        "hint_text": "Düğmeye bas \"Sipariş al\" Sıralı sırada bir satın alma işlemi yapmak için aşağıda.",
+        "order_count": "Bugün sipariş sayısı {{count}}",
+        "get_order": "Sipariş al"
+    },
+    "notification": "Bildiri",
+    "order_card": {
+        "collection_time": "Toplama zamanı",
+        "order_number": "Sipariş numarası",
+        "actual_payment": "Gerçek ödeme",
+        "commission": "Komisyon",
+        "refund_amount": "İade Tutarı",
+        "confirm": "Onaylamak",
+        "cancel": "İptal etmek",
+        "filter": {
+            "all": "Tüm siparişler",
+            "canceled": "İptal edildi",
+            "waiting": "Beklemek",
+            "closed": "Kapalı",
+            "in_progress": "Devam etmekte"
+        }
+    },
+    "success_modal": {
+        "paid_success": "Başarıyla ödendi",
+        "description": "Rekoru sipariş sayfasında görebilirsiniz.",
+        "back_to_orders": "Siparişlere geri dön",
+        "home": "Ev"
+    },
+    "balance": {
+        "balance": "Denge",
+        "under_consideration": "İnceleniyor",
+        "commission": "Bugün için komisyon",
+        "order_completion": "Sipariş tamamlama",
+        "yesterday_commission": "Dünkü komisyon",
+        "team_commission": "Takım komisyonu"
+    },
+    "auction": {
+        "balance": "Denge",
+        "profit": "Yatırım",
+        "benefit": "Kâr",
+        "last_result": "Son Sonuç",
+        "transfer_amount": "Transfer miktarı",
+        "estimated_income": "Tahmini gelir",
+        "transfer": "Aktar",
+        "transfer_list": "Transfer listesi",
+        "duration": "Süre",
+        "commission": "Komisyon",
+        "day": "Gün"
+    },
+    "my_promotions": {
+        "amount_of_money": "Para miktarı",
+        "order_number": "Sipariş numarası",
+        "collection_time": "Toplama zamanı",
+        "release_status": "Sürüm durumu"
+    }
+}

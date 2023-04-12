@@ -1,16 +1,22 @@
-ngx-slick-carousel{
-    img{
+ngx-slick-carousel {
+    img {
         height: 180px;
         width: 100%;
     }
 }
 
-app-shine-button, app-home-card{
-    width: calc(25% - 10px);
+app-home-card,
+app-shine-button {
     align-self: stretch;
+}
+app-home-card {
+    width: calc(25% - 10px);
+}
+app-shine-button {
+    width: calc(33.3% - 10px);
 }
 .slick-slider {
     width: 88%;
     margin: auto;
     background: rgb(14, 13, 13);
-  }
+}
