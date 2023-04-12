@@ -6,8 +6,8 @@
     </ng-container>
 </owl-carousel-o>
 <div class="main-content">
-    <div class="d-flex justify-content-between">
-        <app-home-card *ngFor="let menu of homeMenu;let i=index" [class.ml-2]="i!==0" [menu]="menu"></app-home-card>
+    <div class="d-flex justify-content-between flex-wrap">
+        <app-home-card class="mt-1" *ngFor="let menu of homeMenu;let i=index" [menu]="menu"></app-home-card>
     </div>
     <app-news></app-news>
     <div class="d-flex flex-wrap align-items-center justify-content-between mt-3 mb-2">

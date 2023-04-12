@@ -10,6 +10,11 @@ export const CardMenu = [
         path: 'withdraw'
     },
     {
+        img: 'auction',
+        path: 'auction',
+        title: 'home.buttons.auction'
+    },
+    {
         img: 'invite-user',
         title: 'home.invite_user',
         path: 'invite-user'
@@ -28,9 +33,5 @@ export const ButtonSectionMenu = [
     {
         path: 'rewards',
         title: 'rewards'
-    },
-    {
-        path: 'auction',
-        title: 'auction'
     }
 ]

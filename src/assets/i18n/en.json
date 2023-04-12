@@ -19,7 +19,7 @@
         "first_name": "First name",
         "last_name": "Last name",
         "confirm_password": "Confirm password",
-        "referal_id": "Referal id",
+        "referal_id": "Referral id",
         "create_account": "Create Account",
         "is_have_account": "Do you have account?",
         "sign_in": "Sign In"
@@ -40,9 +40,9 @@
         },
         "buttons": {
             "about_us": "About us",
-            "platform_rools": "Platform Rools",
+            "platform_rools": "Platform Ruls",
             "rewards": "Rewards",
-            "auction": "Auction"
+            "auction":"Investment"
         }
     },
     "basket": {
@@ -89,9 +89,9 @@
     },
     "auction": {
         "balance": "Balance",
-        "profit": "Profit",
+        "profit": "Invested",
         "benefit": "Benefit",
-        "last_result": "Last  Result",
+        "last_result": "Last Result",
         "transfer_amount": "Transfer amount",
         "estimated_income": "Estimated income",
         "transfer": "Transfer",
@@ -107,7 +107,7 @@
         "release_status": "Release status"
     },
     "deposit": {
-        "download_qr": "Download QR kode ",
+        "download_qr": "Download QR code",
         "copy_id": "Copy ID",
         "pay":"Pay"
     },

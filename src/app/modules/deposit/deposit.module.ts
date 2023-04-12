@@ -6,6 +6,8 @@ import { DepositComponent } from './components/deposit/deposit.component';
 import { TranslateModule } from '@ngx-translate/core';
 import { TextCopyDirective } from 'src/app/directives/copy.directive';
 import { ReactiveFormsModule } from '@angular/forms';
+import { DepositService } from './services/deposit.service';
+import { LoaderModule } from '../loader/loader.module';
 
 
 @NgModule({
@@ -17,7 +19,9 @@ import { ReactiveFormsModule } from '@angular/forms';
     CommonModule,
     DepositRoutingModule,
     TranslateModule,
-    ReactiveFormsModule
-  ]
+    ReactiveFormsModule,
+    LoaderModule
+  ],
+  providers: [DepositService]
 })
 export class DepositModule { }

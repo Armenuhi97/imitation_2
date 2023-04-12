@@ -1,0 +1,109 @@
+{
+    "validation": {
+        "required": "Бұл міндетті өріс",
+        "passwords_are_not_equal": "Құпия сөз сәйкес келмеді"
+    },
+    "login": {
+        "username": "Кіру",
+        "password": "Құпия сөз",
+        "remember_me": "мені есте сақтау",
+        "login": "Кіру үшін",
+        "is_have_account": "Есептік жазбаңыз жоқ па?",
+        "sign_up": "Тіркеу"
+    },
+    "registration": {
+        "sign_up": "Тіркеу",
+        "username": "Кіру",
+        "password": "Құпия сөз",
+        "phone": "Телефон нөмірі",
+        "first_name": "Аты",
+        "last_name": "Тегі",
+        "confirm_password": "Құпия сөзді растаңыз",
+        "referal_id": "Реферальный id",
+        "create_account": "Аккаунты құру",
+        "is_have_account": "Сізде аккаунт бар ма?",
+        "sign_in": "Кіру үшін"
+    },
+    "language": "Тіл",
+    "menu": {
+        "home": "Үй",
+        "my_orders": "Менің тапсырыстарым",
+        "chat": "Чат",
+        "profile": "Профиль"
+    },
+    "home": {
+        "deposit": "Депозит",
+        "withdraw": "Төлеу",
+        "invite_user": "Пайдаланушыны шақыру",
+        "news": {
+            "user_news": "Пайдаланушы жаңалықтары"
+        },
+        "buttons": {
+            "about_us": "Біз туралы",
+            "platform_rools": "Платформа ережелері",
+            "rewards": "Марапаттары",
+            "auction":"Инвестициялар"
+        }
+    },
+    "basket": {
+        "commission": "Комиссия",
+        "orders": "чл",
+        "opened": "Ашық",
+        "closed": "Жабық"
+    },
+    "order": {
+        "hint_text": "түймешігін басыңыз \"Тапсырыс алыңыз\" сатып алуды ретімен аяқтау үшін төменде басыңыз.",
+        "order_count": "Бүгінгі тапсырыстар саны {{count}}",
+        "get_order": "Тапсырыс алыңыз"
+    },
+    "notification": "Хабарландыру",
+    "order_card": {
+        "collection_time": "жинау уақыты",
+        "order_number": "Тапсырыс нөмірі",
+        "actual_payment": "Нақты төлем",
+        "commission": "Комиссия",
+        "refund_amount": "Өтемақы сомасы",
+        "confirm": "Растау",
+        "cancel": "Болдырмау",
+        "filter": {
+            "all": "Барлық тапсырыстар",
+            "canceled": "Бас тартылды",
+            "waiting": "күту",
+            "closed": "Жабық",
+            "in_progress": "Орындалуда"
+        }
+    },
+    "success_modal": {
+        "paid_success": "Сәтті төленді",
+        "description": "Жазбаны тапсырыс бетінде көре аласыз",
+        "back_to_orders": "Тапсырыстарға оралу",
+        "home": "Үй"
+    },
+    "balance": {
+        "balance": "Баланс",
+        "under_consideration": "Қарастырылуда",
+        "commission": "Бүгінгі күнге арналған комиссия",
+        "order_completion": "Тапсырысты орындау",
+        "yesterday_commission": "Кешегі комиссия",
+        "team_commission": "Командалық комиссия"
+    },
+    "auction": {
+        "balance": "Баланс",
+        "profit": "Инвестицияланған",
+        "benefit": "Пайда",
+        "last_result": "Соңғы нәтиже",
+        "transfer_amount": "Аударым сомасы",
+        "estimated_income": "Болжалды кіріс",
+        "transfer": "Тасымалдау",
+        "transfer_list": "Трансферттер тізімі",
+        "duration": "Ұзақтығы",
+        "commission": "Комиссия",
+        "day": "Күн"
+    },
+    "my_promotions": {
+        "amount_of_money": "Ақша сомасы",
+        "order_number": "Тапсырыс нөмірі",
+        "collection_time": "жинау уақыты",
+        "release_status": "Шығару күйі"
+    }
+}

@@ -1,28 +1,109 @@
 {
     "validation": {
-        "required": "This is required field_ru",
-        "passwords_are_not_equal": "Passwords are not equal"
+        "required": "Это обязательное поле",
+        "passwords_are_not_equal": "Пароли не совпадают"
     },
     "login": {
-        "username": "Username_ru",
-        "password": "Password_ru",
-        "remember_me": "Remember me_ru",
-        "login": "Log In_ru",
-        "is_have_account": "Don’t have account ?_ru",
-        "sign_up": "Sign Up"
+        "username": "Логин",
+        "password": "Пароль",
+        "remember_me": "Запомнить меня",
+        "login": "Войти",
+        "is_have_account": "Нет аккаунта?",
+        "sign_up": "Регистрация"
     },
     "registration": {
-        "sign_up": "Sign Up_ru",
-        "username": "Username_ru",
-        "password": "Password_ru",
-        "phone": "Phone Number_ru",
-        "first_name": "First name_ru",
-        "last_name": "Last name_ru",
-        "confirm_password": "Confirm password_ru",
-        "referal_id": "Referal id_ru",
-        "create_account": "Create Account_ru",
-        "is_have_account": "Do you have account?_ru",
-        "sign_in": "Sign In"
+        "sign_up": "Регистрация",
+        "username": "Логин",
+        "password": "Пароль",
+        "phone": "Номер телефона",
+        "first_name": "Имя",
+        "last_name": "Фамилия",
+        "confirm_password": "Подтвердите пароль",
+        "referal_id": "Реферальный id",
+        "create_account": "Создать аккаунт",
+        "is_have_account": "У вас есть аккаунт?",
+        "sign_in": "Войти"
     },
-    "language": "Language_ru"
+    "language": "Язык",
+    "menu": {
+        "home": "Главная",
+        "my_orders": "Мои заказы",
+        "chat": "Чат",
+        "profile": "Профиль"
+    },
+    "home": {
+        "deposit": "Депозит",
+        "withdraw": "Выплата",
+        "invite_user": "Пригласить пользователя",
+        "news": {
+            "user_news": "Пользовательские новости"
+        },
+        "buttons": {
+            "about_us": "О нас",
+            "platform_rools": "Правила платформы",
+            "rewards": "Награды",
+            "auction":"Инвестиции"
+        }
+    },
+    "basket": {
+        "commission": "Комиссия",
+        "orders": "чл",
+        "opened": "Открыто",
+        "closed": "Закрыто"
+    },
+    "order": {
+        "hint_text": "Нажмите кнопку \"Получить заказ\" ниже, чтобы совершить покупку в последовательном порядке.",
+        "order_count": "Количество заказов сегодня {{count}}",
+        "get_order": "Получить заказ"
+    },
+    "notification": "Уведомление",
+    "order_card": {
+        "collection_time": "Время сбора",
+        "order_number": "Номер заказа",
+        "actual_payment": "Фактическая выплата",
+        "commission": "Комиссия",
+        "refund_amount": "Сумма возмещения",
+        "confirm": "Подтвердить",
+        "cancel": "Отменить",
+        "filter": {
+            "all": "Все заказы",
+            "canceled": "Отменено",
+            "waiting": "Ожидающий",
+            "closed": "Закрыто",
+            "in_progress": "В ходе выполнения"
+        }
+    },
+    "success_modal": {
+        "paid_success": "Успешно оплачен",
+        "description": "Посмотреть запись можно на странице заказа",
+        "back_to_orders": "Назад к заказам",
+        "home": "Главная"
+    },
+    "balance": {
+        "balance": "Баланс",
+        "under_consideration": "На рассмотрении",
+        "commission": "Комиссия на сегодня",
+        "order_completion": "Выполнение заказа",
+        "yesterday_commission": "Вчерашняя комиссия",
+        "team_commission": "Командная комиссия"
+    },
+    "auction": {
+        "balance": "Баланс",
+        "profit": "Инвестировано",
+        "benefit": "Прибыль",
+        "last_result": "Последний результат",
+        "transfer_amount": "Сумма перевода",
+        "estimated_income": "Предполагаемый доход",
+        "transfer": "Перечислить",
+        "transfer_list": "Список трансферов",
+        "duration": "Продолжительность",
+        "commission": "Комиссия",
+        "day": "День"
+    },
+    "my_promotions": {
+        "amount_of_money": "Сумма денег",
+        "order_number": "Номер заказа",
+        "collection_time": "Время сбора",
+        "release_status": "Статус выпуска"
+    }
 }
