@@ -7,7 +7,6 @@ import { EmptyWithdrawComponent } from './components/empty-withdraw/empty-withdr
 import { FullWithdrawComponent } from './components/full-withdraw/full-withdraw.component';
 import { TranslateModule } from '@ngx-translate/core';
 import { ReactiveFormsModule } from '@angular/forms';
-import { PasswordModule } from '../password/password.module';
 import { WithdrawService } from './services/withdraw.service';
 import { LoaderModule } from '../loader/loader.module';
 import { CreditDebitMaskPipePipe } from './pipes/card-number.pipe';
@@ -25,7 +24,6 @@ import { CreditDebitMaskPipePipe } from './pipes/card-number.pipe';
     WithdrawRoutingModule,
     TranslateModule,
     ReactiveFormsModule,
-    PasswordModule,
     LoaderModule
   ],
   providers: [WithdrawService]

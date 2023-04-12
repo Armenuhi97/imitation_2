@@ -23,15 +23,15 @@ export const CardMenu = [
 
 export const ButtonSectionMenu = [
     {
-        path: 'about-us',
+        path: '/main/about-us',
         title: 'about_us'
     },
     {
-        path: 'platform-rools',
+        path: '/main/platform-rules',
         title: 'platform_rools'
     },
     {
-        path: 'rewards',
+        path: '/main/rewards',
         title: 'rewards'
     }
 ]

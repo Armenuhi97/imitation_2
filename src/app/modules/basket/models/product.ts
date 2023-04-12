@@ -19,6 +19,7 @@ export interface IOrder {
     product: ProductModel;
     transaction: ITransaction;
     user: number;
+    order_id:number;
 }
 export interface ITransaction {
     amount: number;

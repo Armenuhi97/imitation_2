@@ -4,7 +4,7 @@
 </p>
 <p *ngIf="isMain" class="d-flex align-items-center justify-content-between">
     <span class="order-info-label">{{'order_card.order_number' | translate}} :</span>
-    <span class="info">{{product?.id}}</span>
+    <span class="info">{{product?.order_id}}</span>
 </p>
 <div class="product-content d-flex align-items-center">
     <img [src]="fileUrl+product?.product?.image" alt="">
