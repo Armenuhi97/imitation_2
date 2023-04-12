@@ -1,3 +1,7 @@
-export interface IWithdraw {
+export interface IWallet {
     wallet: string;
+}
+
+export interface IWithdrawBody {
+    price: number;
 }

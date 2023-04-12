@@ -1,5 +1,5 @@
 export interface IBalance {
-    balance: number | string;
+    balance: number;
     daily_balance: number | string;
     daily_orders_count: number;
     urish_tiv?: number | string;

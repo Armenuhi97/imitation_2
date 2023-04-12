@@ -12,7 +12,8 @@ export class BalanceService {
     return this.httpClient.get<IBalance>('get-balance/').pipe(
       map((data) => {
         return {
-          balance: (data.balance as number).toFixed(2),
+          balance: data.balance,
+          // as number).toFixed(2),
           daily_balance: (data.daily_balance as number).toFixed(2),
           yesterday_balance: (data.yesterday_balance as number).toFixed(2),
           daily_orders_count: data.daily_orders_count,

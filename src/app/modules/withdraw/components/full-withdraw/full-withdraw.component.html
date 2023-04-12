@@ -1,3 +1,4 @@
+<app-spinner *ngIf="isLoading"></app-spinner>
 <div class="internal-currency">
     <div class="d-flex align-items-center justify-content-between">
         <h4 class="title">{{'withdraw.internal_currency' | translate}}</h4>
@@ -15,11 +16,11 @@
     </div>
     <div class="mt-2">
         <label class="label">{{'withdraw.withdraw_amount' | translate}}</label>
-        <input class="input-money" formControlName="withdraw_amount" type="text">
+        <input class="input-money" formControlName="price" type="text">
     </div>
-    <div class="mt-2">
+    <!-- <div class="mt-2">
         <label class="label">{{'withdraw.password' | translate}}</label>
         <app-password-field formControlName="password"></app-password-field>
-    </div>
-    <button class="pay-btn mt-4">{{'withdraw.withdraw_button_2'| translate}}</button>
+    </div> -->
+    <button (click)="createWithdraw()" class="pay-btn mt-4">{{'withdraw.withdraw_button_2'| translate}}</button>
 </form>

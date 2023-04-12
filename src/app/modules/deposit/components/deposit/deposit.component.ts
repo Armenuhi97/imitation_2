@@ -55,7 +55,7 @@ export class DepositComponent implements OnInit, OnDestroy {
   }
 
   createDeposit(): void {
-    if (this.depositGroup.invalid){
+    if (this.depositGroup.invalid) {
       return;
     }
     this.isLoading = true;
@@ -67,7 +67,7 @@ export class DepositComponent implements OnInit, OnDestroy {
           this.depositGroup.reset();
           this.notificationsService.showNotification({
             type: NotificationTypes.SUCCESS,
-            message: this.translateService.instant('_deposit_success_message'),
+            message: this.translateService.instant('deposit.deposit_success_message'),
           });
         }
       });
