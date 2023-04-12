@@ -5,6 +5,7 @@ import { forkJoin, Observable, Subject, takeUntil, tap } from 'rxjs';
 import { IBalance } from '../../models/balance.model';
 import { ILevel } from '../../models/livel.model';
 import { LevelService } from '../../services/level.service';
+import { BalanceService } from 'src/app/services/balance.service';
 
 @Component({
   selector: 'app-order',
@@ -16,7 +17,7 @@ export class OrderComponent implements OnInit, OnDestroy {
   currentLevel?: ILevel;
   balance?: IBalance;
   orderCount: number = 50;
-  constructor(private basketService: LevelService, private activatedRoute: ActivatedRoute) { }
+  constructor(private basketService: LevelService, private activatedRoute: ActivatedRoute, private balanceService: BalanceService) { }
   ngOnInit(): void {
     this.combineObservable();
   }
@@ -30,7 +31,7 @@ export class OrderComponent implements OnInit, OnDestroy {
     this.getBalance().pipe(takeUntil(this.unsubscribe$)).subscribe();
   }
   private getBalance() {
-    return this.basketService.getBalance().pipe(tap((data) => {
+    return this.balanceService.getBalanceInfo().pipe(tap((data) => {
       this.balance = data;
       this.orderCount = 50 - data.daily_orders_count;
     }))

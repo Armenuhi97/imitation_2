@@ -2,22 +2,26 @@
 <div class="main-content">
     <div class="qr-content text-center">
         <img height="150" width="150" [src]="mainWallet?.image" alt="">
-        <p (click)="downloadImg(mainWallet?.image)" class="download-text mt-2">{{'deposit.download_qr' | translate}} <img src="assets/icons/download-icon.svg" alt=""></p>
+        <p (click)="downloadImg(mainWallet?.image)" class="download-text mt-2">{{'deposit.download_qr' | translate}}
+            <img src="assets/icons/download-icon.svg" alt="">
+        </p>
     </div>
     <div class="copy-text d-flex justify-content-between align-items-center mt-2">
         <span class="text">{{mainWallet?.text}}</span>
         <button [text-copy]="mainWallet?.text" class="ml-2 copy-btn">{{'deposit.copy_id' |
             translate}}</button>
     </div>
-    <div class="mt-4">
+    <form  [formGroup]="depositGroup" class="mt-4">
         <div class="mt-2">
-            <label class="label">Replenishment amount</label>
-            <input class="input-money" type="number" [formControl]="replanishmentAmountControl">
+            <label class="label">{{'deposit.first_input' | translate}}</label>
+            <input formControlName="amount" class="input-money" type="number" >
         </div>
         <div class="mt-2">
-            <label class="label">Replenishment amount</label>
-            <div class="input-money"> {{mainWallet?.text}}</div>
+            <label class="label">{{'deposit.second_input' | translate}}</label>
+            <input formControlName="wallet" class="input-money">
         </div>
-    </div>
-    <button class="pay-btn mt-4">{{'deposit.pay'| translate}}</button>
+        <button type="button" class="pay-btn mt-4">{{'deposit.deposit_button'| translate}}</button>
+    </form>
 </div>
+
+<!-- <div style=" white-space: pre-wrap;">{{'purpose' | translate}}</div> -->

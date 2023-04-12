@@ -1,5 +1,5 @@
 import { Component, OnDestroy, OnInit } from '@angular/core';
-import { FormControl, Validators } from '@angular/forms';
+import { FormBuilder, FormControl, FormGroup, Validators } from '@angular/forms';
 import { DepositService } from '../../services/deposit.service';
 import { Subject, finalize, takeUntil } from 'rxjs';
 import { IMainWallet } from '../../models/wallet.model';
@@ -15,10 +15,18 @@ export class DepositComponent implements OnInit, OnDestroy {
   replanishmentAmountControl = new FormControl(null, Validators.required);
   mainWallet?: IMainWallet;
   isLoading = false;
-  constructor(private depositService: DepositService) {
+  depositGroup: FormGroup;
+  constructor(private depositService: DepositService, private fb: FormBuilder) {
+    this.depositGroup = this.initGroup();
   }
   ngOnInit(): void {
     this.getMainWallet();
+  }
+  private initGroup(): FormGroup {
+    return this.fb.group({
+      amount: [null, Validators.required],
+      wallet: [null, Validators.required]
+    })
   }
   getMainWallet() {
     this.isLoading = true;

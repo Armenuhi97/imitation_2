@@ -14,17 +14,5 @@ export class LevelService {
   public getMyLevelCount(): Observable<IMyLevel> {
     return this.httpClient.get<IMyLevel>(`get-levels/`)
   }
-  public getBalance(): Observable<IBalance> {
-    return this.httpClient.get<IBalance>('get-balance/').pipe(
-      map((data) => {
-        return {
-          balance: (data.balance as number).toFixed(2),
-          daily_balance: (data.daily_balance as number).toFixed(2),
-          yesterday_balance: (data.yesterday_balance as number).toFixed(2),
-          daily_orders_count: data.daily_orders_count,
-          urish_tiv: data['urish tiv']
-        }
-      })
-    )
-  }
+
 }

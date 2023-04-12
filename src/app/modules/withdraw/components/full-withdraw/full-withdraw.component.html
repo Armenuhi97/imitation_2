@@ -11,15 +11,15 @@
 <form class="mt-2" [formGroup]="withdrawGroup">
     <div>
         <label class="label">{{'withdraw.available_amount' | translate}}</label>
-        <input class="input-money" formControlName="available_amount" type="text">
+        <div class="input-money">{{balance}}</div>
     </div>
-    <div>
-        <label class="label">{{'withdraw.withdrawal_amount' | translate}}</label>
-        <input class="input-money" formControlName="withdrawal_amount" type="text">
+    <div class="mt-2">
+        <label class="label">{{'withdraw.withdraw_amount' | translate}}</label>
+        <input class="input-money" formControlName="withdraw_amount" type="text">
     </div>
     <div class="mt-2">
         <label class="label">{{'withdraw.password' | translate}}</label>
         <app-password-field formControlName="password"></app-password-field>
     </div>
-    <button class="pay-btn mt-4">{{'withdraw.pay'| translate}}</button>
+    <button class="pay-btn mt-4">{{'withdraw.withdraw_button_2'| translate}}</button>
 </form>
