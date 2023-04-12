@@ -15,6 +15,7 @@ import { PublicGuard } from './guards/public.guard';
 import { appInitializer } from './interceptors/initialize.interceptor';
 import { AuthService } from './modules/auth/services/auth.service';
 import { UserService } from './services/user.service';
+import { NotificationsModule } from './modules/notification/notification.module';
 
 export function createTranslateLoader(http: HttpClient): TranslateLoader {
   return new TranslateHttpLoader(http, './assets/i18n/', '.json');
@@ -29,6 +30,7 @@ export function createTranslateLoader(http: HttpClient): TranslateLoader {
     BrowserModule,
     HttpClientModule,
     AppRoutingModule,
+    NotificationsModule.forRoot(),
     TranslateModule.forRoot({
       loader: {
         provide: TranslateLoader,

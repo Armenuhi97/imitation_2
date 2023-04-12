@@ -11,16 +11,17 @@
         <button [text-copy]="mainWallet?.text" class="ml-2 copy-btn">{{'deposit.copy_id' |
             translate}}</button>
     </div>
-    <form  [formGroup]="depositGroup" class="mt-4">
+    <form [formGroup]="depositGroup" class="mt-4">
         <div class="mt-2">
             <label class="label">{{'deposit.first_input' | translate}}</label>
-            <input formControlName="amount" class="input-money" type="number" >
+            <input formControlName="price" class="input-money" type="number">
         </div>
         <div class="mt-2">
             <label class="label">{{'deposit.second_input' | translate}}</label>
-            <input formControlName="wallet" class="input-money">
+            <input formControlName="hash_code" class="input-money">
         </div>
-        <button type="button" class="pay-btn mt-4">{{'deposit.deposit_button'| translate}}</button>
+        <button (click)="createDeposit()" type="button" class="pay-btn mt-4">{{'deposit.deposit_button'|
+            translate}}</button>
     </form>
 </div>
 
