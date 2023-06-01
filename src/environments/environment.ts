@@ -1,3 +1,3 @@
 export const environment = {
-    API_URL: 'https://imitation-api.annaniks.com/'
+    API_URL: 'https://api.youfair777.xyz/'
 }
